@@ -1,7 +1,6 @@
-# AI Placement Preparation Assistant
+# AI Placement Preparation Assistant 🎯
 
-An AI-powered interview preparation application
-built using LangChain, OpenRouter and Streamlit.
+An AI-powered interview preparation application built using **LangChain, OpenRouter, and Streamlit**.
 
 ## Features
 
@@ -22,22 +21,66 @@ built using LangChain, OpenRouter and Streamlit.
 
 ## Installation
 
-1. Clone the repository.
+### 1. Clone the repository
 
-2. Create virtual environment:
+```bash
+git clone https://github.com/ManojgowdaBY/AI-Placement-Preparation-Assistant.git
+cd AI-Placement-Preparation-Assistant
+```
 
-   python -m venv venv
+### 2. Create a virtual environment
 
-3. Activate environment:
+```bash
+python -m venv venv
+```
 
-   venv\Scripts\activate
+### 3. Activate the environment
 
-4. Install dependencies:
+**Windows:**
 
-   pip install -r requirements.txt
+```powershell
+venv\Scripts\activate
+```
 
-5. Configure your .env file.
+### 4. Install dependencies
 
-6. Run:
+```bash
+pip install -r requirements.txt
+```
 
-   streamlit run app.py
+### 5. Configure environment variables
+
+Create a `.env` file in the project directory:
+
+```env
+OPENROUTER_API_KEY=your_openrouter_api_key
+MODEL_NAME=openai/gpt-4o-mini
+```
+
+Replace the placeholder with your actual OpenRouter API key.
+
+### 6. Run the application
+
+```bash
+streamlit run app.py
+```
+
+## Project Structure
+
+```text
+AI-Placement-Preparation-Assistant/
+│
+├── app.py
+├── generator.py
+├── prompts.py
+├── schemas.py
+├── requirements.txt
+├── .env
+└── .gitignore
+```
+
+## Author
+
+**Manoj Gowda B Y**
+
+GitHub: [ManojgowdaBY](https://github.com/ManojgowdaBY)
